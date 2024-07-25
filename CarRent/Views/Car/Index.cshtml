@@ -1,0 +1,22 @@
+﻿@model IEnumerable<CarRent.Models.ViewModels.VehicleDetail>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="d-flex justify-content-start gap-3">
+
+    @foreach (var item in Model)
+    {
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="@Url.Content(item.ImagePath)" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">@Url.Content(item.Brand)  @Url.Content(item.Model) </h5>
+                <p class="card-text"> @item.Year model, @Url.Content(item.TransmissionType) vites tipinde, @Url.Content(item.FuelType) araç.</p>
+                <a href="@Url.Action("CarDetails", "Car", new { Id = item.VehicleID })" class="btn btn-primary">Araç Detayları</a>
+            </div>
+        </div>
+    }
+    </div>
+

@@ -1,0 +1,68 @@
+﻿@model IEnumerable<CarRent.Models.ViewModels.VehicleDetail>
+
+@{
+    ViewBag.Title = "CarDetails";
+}
+
+<h2>Araç Bilgileri</h2>
+
+@foreach (var item in Model)
+{
+    //<div class="text-center">
+        <img src="@Url.Content(item.ImagePath)" style="width:500px" class="rounded" alt="...">
+    //</div>
+    //<img src="" class="img-thumbnail" alt="CarImage">
+    <ul class="classifiedInfoList">
+
+        <li>
+            <strong>Marka</strong>&nbsp;
+            <span>@item.Brand&nbsp;</span>
+        </li>
+        <li>
+            <strong>Model</strong>&nbsp;
+            <span>@item.Model&nbsp;</span>
+        </li>
+
+        <li>
+            <strong>Yıl</strong>&nbsp;
+            <span class="">@item.Year</span>
+        </li>
+        <li>
+            <strong>Yakıt</strong>&nbsp;
+            <span class="">
+                @item.FuelType
+            </span>
+        </li>
+        <li>
+            <strong>Vites</strong>&nbsp;
+            <span class="">@item.TransmissionType</span>
+        </li>
+
+        <li>
+            <strong>KM</strong>&nbsp;
+            <span class="">@item.MileAge</span>
+        </li>
+        <li>
+            <strong>Renk</strong>&nbsp;
+            <span class="">
+                @item.Color
+            </span>
+        </li>
+
+        <li>
+            <strong>Kiralayan Şirket Adı</strong>&nbsp;
+            <span class="">
+                @item.CompanyName
+            </span>
+        </li>
+
+        <li>
+            <strong>Günlük Ücret</strong>&nbsp;
+            <span class="">
+                @item.DailyRate
+            </span>
+        </li>
+    </ul>
+
+}
+

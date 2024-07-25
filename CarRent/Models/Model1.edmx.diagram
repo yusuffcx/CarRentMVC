@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="623c04abf4914abcbffd7197a83e36b6" Name="Diagram1">
+        <EntityTypeShape EntityType="rentalModel.Company" Width="1.5" PointX="0.875" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Customer" Width="1.5" PointX="7.625" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Insurance" Width="1.5" PointX="2.875" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Locations" Width="1.5" PointX="5.25" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Payments" Width="1.5" PointX="10.5" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Rentals" Width="1.5" PointX="5.5" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Reservations" Width="1.5" PointX="8.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Roles" Width="1.5" PointX="3.125" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Users" Width="1.5" PointX="5.375" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.VehicleFeatures" Width="1.5" PointX="6" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.VehicleFeaturesDetails" Width="1.5" PointX="8.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.VehicleImages" Width="1.5" PointX="0.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.VehicleReviews" Width="1.5" PointX="8.25" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Vehicles" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.VehicleType" Width="1.5" PointX="1.125" PointY="8.625" IsExpanded="true" />
+        <AssociationConnector Association="rentalModel.FK__Vehicles__Compan__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="rentalModel.FK__Customer__UserID__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="rentalModel.FK__Insurance__Renta__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="rentalModel.FK__Locations__Vehic__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="rentalModel.FK__Payments__Rental__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="rentalModel.FK__Payments__UserID__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="rentalModel.FK__Rentals__UserID__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="rentalModel.FK__Rentals__Vehicle__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="rentalModel.FK__Reservati__UserI__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="rentalModel.FK__Reservati__Vehic__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="rentalModel.FK__Users__RoleID__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="rentalModel.FK__VehicleRe__UserI__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="rentalModel.FK__VehicleFe__Featu__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="rentalModel.FK__VehicleFe__Vehic__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="rentalModel.FK__VehicleIm__Vehic__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="rentalModel.FK__VehicleRe__Vehic__5165187F" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
