@@ -8,61 +8,66 @@
 
 @foreach (var item in Model)
 {
-    //<div class="text-center">
-        <img src="@Url.Content(item.ImagePath)" style="width:500px" class="rounded" alt="...">
-    //</div>
-    //<img src="" class="img-thumbnail" alt="CarImage">
-    <ul class="classifiedInfoList">
+<div class="d-grid gap-3">
+    <img src="@Url.Content(item.ImagePath)" style="width:500px" class="rounded" alt="...">
 
-        <li>
+    <ul class="list-group">
+
+        <li class="list-group-item">
             <strong>Marka</strong>&nbsp;
             <span>@item.Brand&nbsp;</span>
         </li>
-        <li>
+        <li class="list-group-item">
             <strong>Model</strong>&nbsp;
             <span>@item.Model&nbsp;</span>
         </li>
 
-        <li>
+        <li class="list-group-item">
             <strong>Yıl</strong>&nbsp;
             <span class="">@item.Year</span>
         </li>
-        <li>
+        <li class="list-group-item">
             <strong>Yakıt</strong>&nbsp;
             <span class="">
                 @item.FuelType
             </span>
         </li>
-        <li>
+        <li class="list-group-item">
             <strong>Vites</strong>&nbsp;
             <span class="">@item.TransmissionType</span>
         </li>
 
-        <li>
+        <li class="list-group-item">
             <strong>KM</strong>&nbsp;
             <span class="">@item.MileAge</span>
         </li>
-        <li>
+        <li class="list-group-item">
             <strong>Renk</strong>&nbsp;
             <span class="">
                 @item.Color
             </span>
         </li>
 
-        <li>
+        <li class="list-group-item">
             <strong>Kiralayan Şirket Adı</strong>&nbsp;
             <span class="">
                 @item.CompanyName
             </span>
         </li>
 
-        <li>
+        <li class="list-group-item">
             <strong>Günlük Ücret</strong>&nbsp;
             <span class="">
                 @item.DailyRate
             </span>
         </li>
     </ul>
+    <div class="d-flex justify-content-end gap-3">
 
-}
+        <a href="@Url.Action("CarDetails", "Car", new { Id = item.VehicleID })" class="btn btn-primary">Araç Detayları</a>
+    </div>
+</div>
+
+
+        }
 
