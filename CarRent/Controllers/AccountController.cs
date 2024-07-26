@@ -18,7 +18,7 @@ namespace CarRent.Controllers
         SqlDataReader dr;
 
         // GET: Account
-        //[HttpGet]
+        [HttpGet]
         public ActionResult Login()
         {
             return View();
@@ -26,9 +26,10 @@ namespace CarRent.Controllers
 
         void connectionString()
         {
-            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\App_Data\\rental.mdf;Integrated Security=True;Multiple Active Result Sets=True;Application Name=EntityFramework";
+            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\App_Data\\rental.mdf;Integrated Security=True;Application Name=EntityFramework";
         }
 
+        [HttpPost]
         public ActionResult Verify(Account acc)
         {
             connectionString();
@@ -39,12 +40,13 @@ namespace CarRent.Controllers
             if(dr.Read())
             {
                 con.Close();
-                return View();
+                return View("Continue");
             }
+
             else
             {
                 con.Close();
-                return View();
+                return View("Error");
             }
         }
     }

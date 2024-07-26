@@ -3,35 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\yusuf\\source\\repos\\CarRent\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|C:\\Users\\yusuf\\source\\repos\\CarRent\\carrent\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\views\\account\\continue.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\account\\continue.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|C:\\Users\\yusuf\\source\\repos\\CarRent\\carrent\\models\\viewmodels\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\models\\viewmodels\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_YUSUF_SOURCE_REPOS_CARRENT_CARRENT_APP_DATA_RENTAL.MDF/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|C:\\Users\\yusuf\\source\\repos\\CarRent\\carrent\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|C:\\Users\\yusuf\\source\\repos\\CarRent\\carrent\\views\\car\\rezervation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\car\\rezervation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_YUSUF_SOURCE_REPOS_CARRENT_CARRENT_APP_DATA_RENTAL.MDF/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|C:\\Users\\yusuf\\source\\repos\\CarRent\\carrent\\views\\car\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\car\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\views\\account\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\account\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,7 +37,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,75 +45,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Account\\Error.cshtml",
+              "RelativeDocumentMoniker": "CarRent\\Views\\Account\\Error.cshtml",
+              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Account\\Error.cshtml",
+              "RelativeToolTip": "CarRent\\Views\\Account\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-26T12:12:34.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Continue.cshtml",
+              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Account\\Continue.cshtml",
+              "RelativeDocumentMoniker": "CarRent\\Views\\Account\\Continue.cshtml",
+              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Account\\Continue.cshtml",
+              "RelativeToolTip": "CarRent\\Views\\Account\\Continue.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-26T12:12:33.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "CarRent\\Views\\Account\\Login.cshtml",
               "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "CarRent\\Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-26T11:25:44.682Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "CarRent\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Controllers\\AccountController.cs",
               "RelativeToolTip": "CarRent\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwDIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T11:48:20.237Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_LayoutLogin.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Shared\\_LayoutLogin.cshtml",
-              "RelativeDocumentMoniker": "CarRent\\Views\\Shared\\_LayoutLogin.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Shared\\_LayoutLogin.cshtml",
-              "RelativeToolTip": "CarRent\\Views\\Shared\\_LayoutLogin.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-26T11:22:24.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "dbo.Users [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_YUSUF_SOURCE_REPOS_CARRENT_CARRENT_APP_DATA_RENTAL.MDF/True/SqlTable/dbo.Users.sql",
               "ToolTip": "dbo.Users [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-25T11:10:00.544Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Rezervation.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Car\\Rezervation.cshtml",
-              "RelativeDocumentMoniker": "CarRent\\Views\\Car\\Rezervation.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Car\\Rezervation.cshtml",
-              "RelativeToolTip": "CarRent\\Views\\Car\\Rezervation.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-25T10:56:43.79Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Account.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Models\\ViewModels\\Account.cs",
-              "RelativeDocumentMoniker": "CarRent\\Models\\ViewModels\\Account.cs",
-              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Models\\ViewModels\\Account.cs",
-              "RelativeToolTip": "CarRent\\Models\\ViewModels\\Account.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T11:46:48.458Z"
+              "WhenOpened": "2024-07-25T11:10:00.544Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -129,11 +115,12 @@
               "RelativeToolTip": "CarRent\\Controllers\\CarController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T07:00:46.649Z"
+              "WhenOpened": "2024-07-25T07:00:46.649Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Car\\Index.cshtml",
               "RelativeDocumentMoniker": "CarRent\\Views\\Car\\Index.cshtml",
@@ -141,7 +128,8 @@
               "RelativeToolTip": "CarRent\\Views\\Car\\Index.cshtml",
               "ViewState": "AQIAAAYAAAAAAAAAAAAuwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-24T12:25:25.337Z"
+              "WhenOpened": "2024-07-24T12:25:25.337Z",
+              "EditorCaption": ""
             }
           ]
         }
