@@ -42,7 +42,7 @@ namespace CarRent.Controllers
                           .Select(vi => new VehicleDetail
                           {
 
-                              ImagePath = vi.ImagePath,
+                                ImagePath = vi.ImagePath,
                                 VehicleID = (int)vi.VehicleID,
                                 Model = vi.Vehicles.Model,
                                 Brand = vi.Vehicles.Brand,
@@ -56,12 +56,13 @@ namespace CarRent.Controllers
                             }).ToList();
 
                 return View(vehicleDetails);
-
             }
-
-
         }
+        public ActionResult Rezervation(int Id)
+        {
 
+            return View();
+        }
     }
 }
 
