@@ -17,7 +17,7 @@ namespace CarRent.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Vehicles()
         {
-            //this.Locations = new HashSet<Locations>();
+            this.Locations = new HashSet<Locations>();
             this.Rentals = new HashSet<Rentals>();
             this.Reservations = new HashSet<Reservations>();
             this.VehicleFeaturesDetails = new HashSet<VehicleFeaturesDetails>();
@@ -38,12 +38,11 @@ namespace CarRent.Models
         public string FuelType { get; set; }
         public string TransmissionType { get; set; }
         public Nullable<int> MileAge { get; set; }
-        public int LocationID { get; set; }
-
+    
         public virtual Company Company { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual Locations Locations { get; set; }
-        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Locations> Locations { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Rentals> Rentals { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reservations> Reservations { get; set; }

@@ -21,7 +21,5 @@ namespace CarRent.Models
         public Nullable<int> VehicleID { get; set; }
     
         public virtual Vehicles Vehicles { get; set; }
-
-        public virtual VehicleImages VehicleImages { get; set; }
     }
 }

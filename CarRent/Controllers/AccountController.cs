@@ -39,8 +39,8 @@ namespace CarRent.Controllers
             dr = com.ExecuteReader();
             if(dr.Read())
             {
-                con.Close();
-                return View("Continue");
+                con.Close(); 
+                return RedirectToAction("Index", "Car");
             }
 
             else

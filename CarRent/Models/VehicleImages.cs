@@ -19,7 +19,5 @@ namespace CarRent.Models
         public string ImagePath { get; set; }
     
         public virtual Vehicles Vehicles { get; set; }
-
-        public virtual Locations Locations { get; set; }
     }
 }
