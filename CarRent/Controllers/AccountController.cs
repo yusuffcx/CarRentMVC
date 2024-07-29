@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 using CarRent.Models;
 using CarRent.Models.ViewModels;
 
@@ -37,9 +38,19 @@ namespace CarRent.Controllers
             com.Connection = con;
             com.CommandText = "select * from Users where Username='"+ acc.Username +"' and password= '"+acc.Password +"'";
             dr = com.ExecuteReader();
+
             if(dr.Read())
             {
-                con.Close(); 
+                var RoleID = dr["RoleID"].ToString();
+                Session["RoleID"] = RoleID;
+                if (RoleID == "1")
+                {
+                    FormsAuthentication.SetAuthCookie(RoleID, false);
+                    
+                  
+                    
+                }
+                con.Close();
                 return RedirectToAction("Index", "Car");
             }
 
@@ -48,6 +59,10 @@ namespace CarRent.Controllers
                 con.Close();
                 return View("Error");
             }
+        }
+        public ActionResult isNotAllow()
+        {
+            return View();
         }
     }
 }

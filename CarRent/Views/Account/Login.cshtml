@@ -13,18 +13,20 @@
         <div class="w3l-form-info">
             <div class="w3_info">
                 <h2>Giriş</h2>
-                <form action="Verify" method="post">
-                    <div class="input-group">
-                        <span><i class="fas fa-user" aria-hidden="true"></i></span>
-                        <input type="text" name="Username" placeholder="Username" required="">
-                    </div>
-                    <div class="input-group">
-                        <span><i class="fas fa-key" aria-hidden="true"></i></span>
-                        <input type="Password" name="Password" placeholder="Password" required="">
-                    </div>
-                    <button class="btn btn-primary btn-block" type="submit">Giriş</button>
-                </form>
-
+                @using (Html.BeginForm("Verify", "Account", FormMethod.Post))
+                { 
+                //<form action="Account/Verify" method="post">
+                <div class="input-group">
+                    <span><i class="fas fa-user" aria-hidden="true"></i></span>
+                    <input type="text" name="Username" placeholder="Username" required="">
+                </div>
+                <div class="input-group">
+                    <span><i class="fas fa-key" aria-hidden="true"></i></span>
+                    <input type="Password" name="Password" placeholder="Password" required="">
+                </div>
+                <button class="btn btn-primary btn-block" type="submit">Giriş</button>
+            //</form>
+                }
                 <p class="account">Don't have an account? <a href="#signup">Sign up</a></p>
             </div>
         </div>

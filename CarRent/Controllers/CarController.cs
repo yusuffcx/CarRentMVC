@@ -31,7 +31,6 @@ namespace CarRent.Controllers
                 return View(vehicleImagesWithDetails);
             }
         }
-
         public ActionResult CarDetails(int Id)
         {
             using (var context = new rentalEntities1())
@@ -58,10 +57,33 @@ namespace CarRent.Controllers
                 return View(vehicleDetails);
             }
         }
+
         public ActionResult Rezervation(int Id)
         {
+            using (var context = new rentalEntities1())
+            {
+                var vehicleImages = context.VehicleImages
+                    .Where(vi => vi.VehicleID == Id)
+                    .ToList();
 
-            return View();
+                var companies = context.Company.ToList();
+
+                var reservations = context.Reservations
+                    .Where(r => r.VehicleID == Id)
+                    .ToList();
+
+                var viewModel = new ReservationModel
+                {
+                    VehicleImages = vehicleImages,
+                    Companies = companies,
+                    Reservations = reservations,
+                    ImagePath = vehicleImages.ToArray()[0].ToString()
+                };
+
+                return View(viewModel);
+            }
+
+
         }
     }
 }

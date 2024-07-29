@@ -3,19 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\yusuf\\source\\repos\\CarRent\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_YUSUF_SOURCE_REPOS_CARRENT_CARRENT_APP_DATA_RENTAL.MDF/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|C:\\Users\\yusuf\\source\\repos\\CarRent\\carrent\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,51 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dbo.Users [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_YUSUF_SOURCE_REPOS_CARRENT_CARRENT_APP_DATA_RENTAL.MDF/True/SqlTable/dbo.Users.sql",
-              "ToolTip": "dbo.Users [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-27T11:32:59.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CarController.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Controllers\\CarController.cs",
-              "RelativeDocumentMoniker": "CarRent\\Controllers\\CarController.cs",
-              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Controllers\\CarController.cs",
-              "RelativeToolTip": "CarRent\\Controllers\\CarController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwCEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T11:16:58.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "CarRent\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "CarRent\\Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAC4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-27T10:59:33.064Z",
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Web.config",
+              "RelativeDocumentMoniker": "CarRent\\Web.config",
+              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Web.config",
+              "RelativeToolTip": "CarRent\\Web.config",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-07-29T08:55:01.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "CarRent\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Controllers\\AccountController.cs",
               "RelativeToolTip": "CarRent\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAASwD8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T11:48:20.237Z",
+              "WhenOpened": "2024-07-29T07:20:38.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CarRent\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CarRent\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T07:35:47.44Z",
               "EditorCaption": ""
             }
           ]
