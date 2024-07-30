@@ -22,9 +22,9 @@ namespace CarRent.Models.ViewModels
         public string Color { get; set; }
 
         public string CompanyName { get; set; }
-
         public string Address { get; set; }
         public string LocationName { get; set; }
+        public string LicensePlate { get; set; }
     }
 }
 

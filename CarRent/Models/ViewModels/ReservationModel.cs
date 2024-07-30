@@ -14,10 +14,15 @@ namespace CarRent.Models.ViewModels
         public string Phone { get; set; }
         //Company 
 
+        public string Brand { get; set; }
+        public string Model { get; set; }
+        public int Year { get; set; }
+        public decimal DailyRate { get; set; }
+        
+        public DateTime AvailableFrom{ get; set; }
+        public DateTime AvailableTo { get; set; }
+
         public int VehicleID { get; set; }
-        public int ImageID { get; set; }
-        public string ImagePath { get; set; }
-        //Images
         public int UserID { get; set; }
 
         public int ReservationID { get; set; }
@@ -29,13 +34,9 @@ namespace CarRent.Models.ViewModels
         //Reservation
 
       
-            public IEnumerable<VehicleImages> VehicleImages { get; set; }
+           // public IEnumerable<VehicleImages> VehicleImages { get; set; }
             public IEnumerable<Company> Companies { get; set; }
             public IEnumerable<Reservations> Reservations { get; set; }
-        
-
-
-
     }
 }
 

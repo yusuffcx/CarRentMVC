@@ -23,7 +23,12 @@
         </li>
 
         <li class="list-group-item">
-            <strong>Yıl</strong>&nbsp;
+            <strong>Plaka</strong>&nbsp;
+            <span>@item.LicensePlate&nbsp;</span>
+        </li>
+
+        <li class="list-group-item">
+            <strong>Model Yılı</strong>&nbsp;
             <span class="">@item.Year</span>
         </li>
         <li class="list-group-item">
@@ -64,10 +69,8 @@
     </ul>
     <div class="d-flex justify-content-end gap-3">
 
-        <a href="@Url.Action("Rezervation", "Car", new { Id = item.VehicleID })" class="btn btn-primary">Rezervasyon Detay</a>
+        <a href="@Url.Action("Rezervation", "Car", new { Id = item.VehicleID})" class="btn btn-primary">Rezervasyon Oluştur</a>
     </div>
 </div>
-
-
-        }
+}
 

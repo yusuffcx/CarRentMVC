@@ -1,23 +1,34 @@
-﻿@model  CarRent.Models.ViewModels.ReservationModel
+﻿@model  List<CarRent.Models.ViewModels.ReservationModel>
 
 @{
-    ViewBag.Title = "Rezervation";
+    //ViewBag.Title = "Rezervation";
+}
+
+@foreach (var item in Model)
+{
+    <input class="form-control m-3" type="text" placeholder="Arac Markası: @item.Brand">
+    <input class="form-control m-3" type="text" placeholder="Modeli: @item.Model">
+    <input class="form-control m-3" type="text" placeholder="Model Yılı: @item.Year">
+    <input class="form-control m-3" type="text" placeholder="Günlük Ücreti: @item.DailyRate">
+    <input class="form-control m-3" type="text" placeholder="En erken müsaitlik zamanı: @item.AvailableFrom">
+    <input class="form-control m-3" type="text" placeholder="En geç müsaitlik zamanı: @item.AvailableTo">
+        <div>
+            <label for="datepicker-buttons">Date picker with optional footer buttons</label>
+            <b-form-datepicker id="datepicker-buttons"
+                               today-button
+                               reset-button
+                               close-button
+                               locale="en"></b-form-datepicker>
+        </div>
 }
 
 
 
-<h2>Vehicle Images</h2>
-<ul>
+@ViewBag.UserID
+@ViewBag.Username
 
 
 
-        <li>@Model.CompanyName - @Model.Address</li>
-
-    
-</ul>
-
-<h2>Reservations</h2>
 
 
-<h2>Rezervation</h2>
 

@@ -42,13 +42,13 @@ namespace CarRent.Controllers
             if(dr.Read())
             {
                 var RoleID = dr["RoleID"].ToString();
+                var UserID = dr["UserID"].ToString();
                 Session["RoleID"] = RoleID;
+                Session["UserId"] = UserID;
+                Session["UserName"] = dr["UserName"].ToString(); ;
                 if (RoleID == "1")
                 {
                     FormsAuthentication.SetAuthCookie(RoleID, false);
-                    
-                  
-                    
                 }
                 con.Close();
                 return RedirectToAction("Index", "Car");

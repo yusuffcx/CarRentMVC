@@ -17,8 +17,10 @@ namespace CarRent.Controllers
             {
                 return RedirectToAction("isNotAllow", "Account");
             }
-
-            return View();
+            else
+            {
+                return View();
+            }
         }
 
         public ActionResult About()
