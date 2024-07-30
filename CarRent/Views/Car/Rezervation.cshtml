@@ -6,26 +6,31 @@
 
 @foreach (var item in Model)
 {
-    <input class="form-control m-3" type="text" placeholder="Arac Markası: @item.Brand">
-    <input class="form-control m-3" type="text" placeholder="Modeli: @item.Model">
-    <input class="form-control m-3" type="text" placeholder="Model Yılı: @item.Year">
-    <input class="form-control m-3" type="text" placeholder="Günlük Ücreti: @item.DailyRate">
-    <input class="form-control m-3" type="text" placeholder="En erken müsaitlik zamanı: @item.AvailableFrom">
-    <input class="form-control m-3" type="text" placeholder="En geç müsaitlik zamanı: @item.AvailableTo">
-        <div>
-            <label for="datepicker-buttons">Date picker with optional footer buttons</label>
-            <b-form-datepicker id="datepicker-buttons"
-                               today-button
-                               reset-button
-                               close-button
-                               locale="en"></b-form-datepicker>
-        </div>
+    <div>
+
+        <input class="form-control m-3" type="text" placeholder="Arac Markası: @item.Brand">
+        <input class="form-control m-3" type="text" placeholder="Modeli: @item.Model">
+        <input class="form-control m-3" type="text" placeholder="Model Yılı: @item.Year">
+        <input class="form-control m-3" type="text" placeholder="Günlük Ücreti: @item.DailyRate">
+        <input class="form-control m-3" type="text" placeholder="En erken müsaitlik zamanı: @item.AvailableFrom">
+        <input class="form-control m-3" type="text" placeholder="En geç müsaitlik zamanı: @item.AvailableTo">
+        <p>Kiralamak istediğiniz tarih: </p>
+        <input type="text" class="form-control m-3" name="" id="datepicker" />
+
+        <script>
+            $(function () {
+                $("#datepicker").datepicker({ format: "dd/mm/yyyy" });
+            });
+        </script>
+
+    </div>
 }
 
 
 
-@ViewBag.UserID
-@ViewBag.Username
+@*
+    @ViewBag.UserID
+    @ViewBag.Username*@
 
 
 
