@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\car\\rezervation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\controllers\\rentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\controllers\\rentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|C:\\Users\\yusuf\\source\\repos\\CarRent\\carrent\\views\\car\\cardetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -26,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RentController.cs",
+              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Controllers\\RentController.cs",
+              "RelativeDocumentMoniker": "CarRent\\Controllers\\RentController.cs",
+              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Controllers\\RentController.cs",
+              "RelativeToolTip": "CarRent\\Controllers\\RentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T08:51:12.703Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -40,22 +53,9 @@
               "RelativeDocumentMoniker": "CarRent\\Views\\Car\\Rezervation.cshtml",
               "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Car\\Rezervation.cshtml",
               "RelativeToolTip": "CarRent\\Views\\Car\\Rezervation.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAAAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAC4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-30T08:54:28.283Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "CarRent\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "CarRent\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-30T11:44:28.082Z",
               "EditorCaption": ""
             },
             {
@@ -66,7 +66,7 @@
               "RelativeDocumentMoniker": "CarRent\\Views\\Car\\CarDetails.cshtml",
               "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Car\\CarDetails.cshtml",
               "RelativeToolTip": "CarRent\\Views\\Car\\CarDetails.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAXAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-30T10:41:31.652Z",
               "EditorCaption": ""
