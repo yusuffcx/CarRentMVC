@@ -14,30 +14,42 @@
         <input class="form-control m-3" type="text" placeholder="Günlük Ücreti: @item.DailyRate">
         <input class="form-control m-3" type="text" placeholder="En erken müsaitlik zamanı: @item.AvailableFrom">
         <input class="form-control m-3" type="text" placeholder="En geç müsaitlik zamanı: @item.AvailableTo">
-        <p>Aracı teslim tarihiniz: </p>
-        <input type="text" class="form-control m-3" name="" id="datepicker" />
 
-        <script>
-            $(function () {
-                $("#datepicker").datepicker({
-                    format: "dd.mm.yyyy"
-                });
-            });
-        </script>
-
-        <div>
-            <p>Aracı bırakmak istediğiniz tarih:</p>
-            <input type="text" class="form-control m-3" name="" id="dropoff" />
-            <script>
+        Start: <input type="text" id="my_date_picker1">
+        End Date: <input type="text" id="my_date_picker2">
+                  <script>
+                      $(document).ready(function () {
+                       var enErken = $.datepicker.parseDate('dd.mm.yy','@item.AvailableFrom');
+                       var enGec = $.datepicker.parseDate('dd.mm.yy', '@item.AvailableTo');
+                          window.alert(enErken);
+                          window.alert(enGec);
                 $(function () {
-                    $("#dropoff").datepicker({ format: "dd.mm.yyyy" });
+                    $("#my_date_picker1").
+                        datepicker({
+                            dateFormat: 'dd.mm.yy', minDate: enErken
+                        });
                 });
-            </script>
-        </div>
 
+                $(function () {
+                    $("#my_date_picker2").
+                        datepicker({ dateFormat: 'dd.mm.yy', maxDate: enGec });
+                });
+
+                $('#my_date_picker1').change(function () {
+                    startDate = $(this).datepicker('getDate');
+                   // $("#my_date_picker1").datepicker("option", "minDate", enErken);
+                    $("#my_date_picker2").datepicker("option", "minDate", startDate);
+                })
+
+                $('#my_date_picker2').change(function () {
+                    endDate = $(this).datepicker('getDate');
+                   // $("#my_date_picker2").datepicker("option", "maxDate", startDate);
+                    $("#my_date_picker1").datepicker("option", "maxDate", endDate);
+                })
+            })
+                  </script>
     </div>
     @*@item.VehicleID*@
-    <a href="@Url.Action("Rezervation", "Car", new { Id = item.VehicleID})" class="btn btn-primary">Aracı Kirala</a>
 
 }
     @*@ViewBag.UserID
