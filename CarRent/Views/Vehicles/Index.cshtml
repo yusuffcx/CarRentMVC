@@ -7,9 +7,9 @@
 
 
 <p>
-    @*@Html.ActionLink("Create New", "Create")*@
     <a href="@Url.Action("Create", "Vehicles")" class="btn btn-primary">Yeni Araç</a>
 </p>
+<h1>Güncel Araç Listesi</h1>
 <table class="table table-hover">
     <thead>
         <tr>
@@ -47,10 +47,8 @@
             <th scope="col">
                 @Html.DisplayNameFor(model => model.MileAge)
             </th>
-            <th scope="col">
-                @Html.DisplayNameFor(model => model.Company.CompanyName)
-            </th>
-            <th scope="col">#</th>
+            <th scope="col">Şirket Adı</th>
+            <th scope="col" colspan="2" class="text-center">###</th>
         </tr>
     </thead>
 
@@ -98,9 +96,14 @@
                     @Html.DisplayFor(modelItem => item.Company.CompanyName)
                 </td>
                 <td colspan="2">
-                    @Html.ActionLink("Edit", "Edit", new { id = item.VehicleID }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.VehicleID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.VehicleID })
+                    <div class="d-flex">
+                        <a href="@Url.Action("Edit", "Vehicles", new { Id = item.VehicleID})" class="btn btn-primary">Düzenle</a> |
+                        <a href="@Url.Action("Details", "Vehicles", new { Id = item.VehicleID})" class="btn btn-info">Detaylar</a> |
+                        <a href="@Url.Action("Delete", "Vehicles", new { Id = item.VehicleID})" class="btn btn-danger">Sil</a>
+                    </div>
+
+
+
                 </td>
             </tr>
         </tbody>

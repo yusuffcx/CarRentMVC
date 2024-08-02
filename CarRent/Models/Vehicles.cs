@@ -6,12 +6,12 @@
 //     Manual changes to this file will be overwritten if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
 namespace CarRent.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class Vehicles
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -27,18 +27,39 @@ namespace CarRent.Models
     
         public int VehicleID { get; set; }
         public Nullable<int> CompanyID { get; set; }
+        [DisplayName("Marka")]
         public string Brand { get; set; }
+        [DisplayName("Model")]
+
         public string Model { get; set; }
+        [DisplayName("Renk")]
+
         public string Color { get; set; }
+        [DisplayName("Model Yýlý")]
+
         public Nullable<int> Year { get; set; }
+        [DisplayName("Günlük Ücret")]
+
         public Nullable<decimal> DailyRate { get; set; }
+        [DisplayName("Plaka")]
+
         public string LicensePlate { get; set; }
+        [DisplayName("En Erken müsaitlik")]
+
         public Nullable<System.DateTime> AvailableFrom { get; set; }
+        [DisplayName("En Geç müsaitlik")]
+
         public Nullable<System.DateTime> AvailableTo { get; set; }
+        [DisplayName("Yakýt")]
         public string FuelType { get; set; }
+        [DisplayName("Vites")]
+
         public string TransmissionType { get; set; }
+        [DisplayName("Kilometre")]
+
         public Nullable<int> MileAge { get; set; }
-    
+        [DisplayName("Þirket Adý")]
+
         public virtual Company Company { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Locations> Locations { get; set; }

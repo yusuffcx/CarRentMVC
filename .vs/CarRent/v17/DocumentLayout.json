@@ -7,16 +7,8 @@
       "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\vehicles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\views\\car\\cardetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\car\\cardetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\views\\car\\rezervation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\car\\rezervation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\views\\vehicles\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\vehicles\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,41 +26,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "CarRent\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "CarRent\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T08:21:40.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CarDetails.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Car\\CarDetails.cshtml",
-              "RelativeDocumentMoniker": "CarRent\\Views\\Car\\CarDetails.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Car\\CarDetails.cshtml",
-              "RelativeToolTip": "CarRent\\Views\\Car\\CarDetails.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAEcAAAAAAAAA",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Vehicles\\Create.cshtml",
+              "RelativeDocumentMoniker": "CarRent\\Views\\Vehicles\\Create.cshtml",
+              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Vehicles\\Create.cshtml",
+              "RelativeToolTip": "CarRent\\Views\\Vehicles\\Create.cshtml",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAAH4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T07:43:11.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Rezervation.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Car\\Rezervation.cshtml",
-              "RelativeDocumentMoniker": "CarRent\\Views\\Car\\Rezervation.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Car\\Rezervation.cshtml",
-              "RelativeToolTip": "CarRent\\Views\\Car\\Rezervation.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T07:41:50.227Z",
+              "WhenOpened": "2024-08-02T12:21:02.528Z",
               "EditorCaption": ""
             },
             {
@@ -79,9 +45,9 @@
               "RelativeDocumentMoniker": "CarRent\\Views\\Vehicles\\Index.cshtml",
               "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Vehicles\\Index.cshtml",
               "RelativeToolTip": "CarRent\\Views\\Vehicles\\Index.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAA+AAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAGUAAAB+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T07:26:16.309Z",
+              "WhenOpened": "2024-08-02T11:12:15.914Z",
               "EditorCaption": ""
             }
           ]
