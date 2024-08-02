@@ -7,7 +7,7 @@
     <title>@ViewBag.Title - HızlıKirala</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    @*<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>*@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
 
-                    <li>@Html.ActionLink("Giriş", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Admin Paneli", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Hakkında", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Kişi", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Araçlar", "Index", "Car", new { area = "" }, new { @class = "nav-link" })  </li>
@@ -48,11 +48,13 @@
             <p>&copy; @DateTime.Now.Year - #HızlıAraç Araç Kirala</p>
         </footer>
     </div>
+
+
     @*<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js" integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="~/Scripts/bootstrap-datepicker.js"></script>
     <script src="~/Scripts/jquery-3.7.0.js"></script>*@
-    @RenderSection("scripts",false)
+   
 
 </body>
 </html>

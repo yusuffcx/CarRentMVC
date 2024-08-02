@@ -7,7 +7,6 @@
 @foreach (var item in Model)
 {
     <div>
-
         <input class="form-control m-3" type="text" placeholder="Arac Markası: @item.Brand">
         <input class="form-control m-3" type="text" placeholder="Modeli: @item.Model">
         <input class="form-control m-3" type="text" placeholder="Model Yılı: @item.Year">
@@ -17,46 +16,77 @@
 
         Start: <input type="text" id="my_date_picker1">
         End Date: <input type="text" id="my_date_picker2">
-                  <script>
-                      $(document).ready(function () {
-                       var enErken = $.datepicker.parseDate('dd.mm.yy','@item.AvailableFrom');
-                       var enGec = $.datepicker.parseDate('dd.mm.yy', '@item.AvailableTo');
-                          window.alert(enErken);
-                          window.alert(enGec);
-                $(function () {
-                    $("#my_date_picker1").
-                        datepicker({
-                            dateFormat: 'dd.mm.yy', minDate: enErken
-                        });
-                });
+        <a class="btn btn-info kirala gap-4" href="#">Aracı Kirala</a>
+       @* <script src="~/Scripts/jquery-3.7.0.min.js"></script>*@
+        <script>
+        $(document).ready(function () {
+            var enErken = $.datepicker.parseDate('dd.mm.yy', '@item.AvailableFrom');
+            var enGec = $.datepicker.parseDate('dd.mm.yy', '@item.AvailableTo');
 
-                $(function () {
-                    $("#my_date_picker2").
-                        datepicker({ dateFormat: 'dd.mm.yy', maxDate: enGec });
-                });
-
-                $('#my_date_picker1').change(function () {
-                    startDate = $(this).datepicker('getDate');
-                   // $("#my_date_picker1").datepicker("option", "minDate", enErken);
+            $("#my_date_picker1").datepicker({
+                dateFormat: 'dd.mm.yy',
+                minDate: enErken,
+                onSelect: function (selectedDate) {
+                    var startDate = $(this).datepicker('getDate');
                     $("#my_date_picker2").datepicker("option", "minDate", startDate);
-                })
+                }
+            });
 
-                $('#my_date_picker2').change(function () {
-                    endDate = $(this).datepicker('getDate');
-                   // $("#my_date_picker2").datepicker("option", "maxDate", startDate);
+            $("#my_date_picker2").datepicker({
+                dateFormat: 'dd.mm.yy',
+                maxDate: enGec,
+                onSelect: function (selectedDate) {
+                    var endDate = $(this).datepicker('getDate');
                     $("#my_date_picker1").datepicker("option", "maxDate", endDate);
-                })
-            })
-                  </script>
-    </div>
-    @*@item.VehicleID*@
+                }
+            });
 
+            $(".kirala").click(function (e) {
+                e.preventDefault();
+
+                var startDate = $("#my_date_picker1").val();
+                var endDate = $("#my_date_picker2").val();
+                alert(startDate);
+                alert(endDate);
+                alert(typeof (startDate));
+                var userID = @ViewBag.UserID;
+                var vehicleID = @item.VehicleID;
+                alert(userID);
+                alert(vehicleID);
+
+
+
+                $.ajax({
+                    type: "POST",
+                    url: "/Rent/AddRent/"+2,
+                    data: {
+                        userID: userID,
+                        startDate: startDate,
+                        endDate: endDate,
+                        vehicleID: vehicleID
+                    },
+                    success: function () {
+                        alert("Arac Kiralama bilgisi ekleniyor!");
+                        window.location.replace("/Car/Index/");
+                    },
+                    error: function () {
+                        alert("Hata olustu! Lütfen bilgilerinizi kontrol edin.");
+                    }
+                });
+            });
+        });
+        </script>
+    </div>
 }
-    @*@ViewBag.UserID
+
+
+
+@*@item.VehicleID*@
+@*@ViewBag.UserID
     @ViewBag.Username*@
 
 
-
-
-
-
+                @*///* var start = $.datepicker.parseDate('dd.mm.yy', 'startDate');
+                //var end = $.datepicker.parseDate('dd.mm.yy', 'endDate');*/
+                //alert(start);
+                //alert(end);*@

@@ -19,7 +19,7 @@ namespace CarRent.Controllers
             }
             else
             {
-                return View();
+                return RedirectToAction("Index","Vehicles");
             }
         }
 

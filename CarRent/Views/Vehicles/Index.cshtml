@@ -1,0 +1,109 @@
+﻿@model IEnumerable<CarRent.Models.Vehicles>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<p>
+    @*@Html.ActionLink("Create New", "Create")*@
+    <a href="@Url.Action("Create", "Vehicles")" class="btn btn-primary">Yeni Araç</a>
+</p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">##</th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Brand)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Model)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Color)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.DailyRate)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.LicensePlate)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.AvailableFrom)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.AvailableTo)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.FuelType)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.TransmissionType)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.MileAge)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Company.CompanyName)
+            </th>
+            <th scope="col">#</th>
+        </tr>
+    </thead>
+
+    @{ int count = 1; }
+
+    @foreach (var item in Model)
+    {
+        <tbody>
+            <tr>
+                <th scope="row">@count</th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Brand)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Model)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Color)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Year)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DailyRate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LicensePlate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AvailableFrom)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AvailableTo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FuelType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TransmissionType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MileAge)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Company.CompanyName)
+                </td>
+                <td colspan="2">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.VehicleID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.VehicleID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.VehicleID })
+                </td>
+            </tr>
+        </tbody>
+        count++;
+    }
+</table>
