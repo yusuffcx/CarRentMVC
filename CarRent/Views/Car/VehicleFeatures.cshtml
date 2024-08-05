@@ -1,0 +1,26 @@
+﻿@model  List<CarRent.Models.ViewModels.VehicleDetail>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Araç Özellikleri</h1>
+
+@foreach (var item in Model)
+{
+    <div class="d-grid gap-3">
+        <img src="@Url.Content(item.ImagePath)" style="width:500px" class="rounded" alt="...">
+
+        <ul class="list-group">
+            <li class="list-group-item">
+                <strong>Araç özellik</strong>&nbsp;
+                <span>@item.detailDescription&nbsp;</span>
+            </li>
+        </ul>
+    </div>
+}
+
+
+
+
+

@@ -287,6 +287,7 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="SQLQuery1.sql" />
     <Content Include="SQLQuery2.sql" />
+    <Content Include="SQLQuery3.sql" />
     <Content Include="styles\style.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -315,6 +316,7 @@
     <Content Include="Views\Vehicles\Details.cshtml" />
     <Content Include="Views\Vehicles\Edit.cshtml" />
     <Content Include="Views\Vehicles\Index.cshtml" />
+    <Content Include="Views\Car\VehicleFeatures.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

@@ -13,7 +13,7 @@ namespace CarRent.Controllers
         public ActionResult Index()
         {
 
-            if (Session["RoleID"].ToString() != "1")
+            if (Session["RoleID"].ToString() == "2")
             {
                 return RedirectToAction("isNotAllow", "Account");
             }

@@ -46,10 +46,11 @@ namespace CarRent.Controllers
                 Session["RoleID"] = RoleID;
                 Session["UserId"] = UserID;
                 Session["UserName"] = dr["UserName"].ToString(); ;
-                if (RoleID == "1")
+                if (RoleID == "1" || RoleID == "3")
                 {
                     FormsAuthentication.SetAuthCookie(RoleID, false);
                 }
+
                 con.Close();
                 return RedirectToAction("Index", "Car");
             }

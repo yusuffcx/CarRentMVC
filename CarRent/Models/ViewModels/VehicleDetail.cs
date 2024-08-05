@@ -25,6 +25,8 @@ namespace CarRent.Models.ViewModels
         public string Address { get; set; }
         public string LocationName { get; set; }
         public string LicensePlate { get; set; }
+
+        public string detailDescription { get; set; }
     }
 }
 

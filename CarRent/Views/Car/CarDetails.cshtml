@@ -68,6 +68,7 @@
         </li>
     </ul>
     <div class="d-flex justify-content-end gap-3">
+        <a href="@Url.Action("VehicleFeatures", "Car", new { Id = item.VehicleID})" class="btn btn-info">Aracın Detaylı Özellikleri</a>
 
         <a href="@Url.Action("Rezervation", "Car", new { Id = item.VehicleID})" class="btn btn-primary">Rezervasyon Oluştur</a>
     </div>

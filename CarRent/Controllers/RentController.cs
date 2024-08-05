@@ -35,7 +35,6 @@ namespace CarRent.Controllers
                 _context.SaveChanges();
         }
     }
-
 }
 
 

@@ -14,20 +14,20 @@ namespace CarRent.Controllers
     public class CarController : Controller
     {
         // GET: Car
-        public ActionResult Index(int id=0)
+        public ActionResult Index(int id = 0)
         {
             using (var context = new rentalEntities1())
             {
                 var vehicleImagesWithDetails = context.VehicleImages
                 .Select(vi => new VehicleDetail
                 {
-                ImagePath = vi.ImagePath,
-                VehicleID = (int)vi.VehicleID,
-                Model = vi.Vehicles.Model,
-                Brand = vi.Vehicles.Brand,
-                TransmissionType = vi.Vehicles.TransmissionType,
-                FuelType = vi.Vehicles.FuelType,
-                Year = (int)vi.Vehicles.Year 
+                    ImagePath = vi.ImagePath,
+                    VehicleID = (int)vi.VehicleID,
+                    Model = vi.Vehicles.Model,
+                    Brand = vi.Vehicles.Brand,
+                    TransmissionType = vi.Vehicles.TransmissionType,
+                    FuelType = vi.Vehicles.FuelType,
+                    Year = (int)vi.Vehicles.Year
                 }).ToList();
 
                 return View(vehicleImagesWithDetails);
@@ -37,41 +37,41 @@ namespace CarRent.Controllers
         {
             using (var context = new rentalEntities1())
             {
-                
+
                 IEnumerable<VehicleDetail> vehicleDetails = context.VehicleImages
                           .Where(vi => vi.VehicleID == Id)
                           .Select(vi => new VehicleDetail
                           {
-                                ImagePath = vi.ImagePath,
-                                VehicleID = (int)vi.VehicleID,
-                                Model = vi.Vehicles.Model,
-                                Brand = vi.Vehicles.Brand,
-                                TransmissionType = vi.Vehicles.TransmissionType,
-                                FuelType = vi.Vehicles.FuelType,
-                                Year = (int)vi.Vehicles.Year,
-                                MileAge = (int)vi.Vehicles.MileAge,
-                                Color = vi.Vehicles.Color,
-                                DailyRate = (decimal)vi.Vehicles.DailyRate,
-                                CompanyName = vi.Vehicles.Company.CompanyName,
-                                LicensePlate = vi.Vehicles.LicensePlate,
-                            }).ToList();
+                              ImagePath = vi.ImagePath,
+                              VehicleID = (int)vi.VehicleID,
+                              Model = vi.Vehicles.Model,
+                              Brand = vi.Vehicles.Brand,
+                              TransmissionType = vi.Vehicles.TransmissionType,
+                              FuelType = vi.Vehicles.FuelType,
+                              Year = (int)vi.Vehicles.Year,
+                              MileAge = (int)vi.Vehicles.MileAge,
+                              Color = vi.Vehicles.Color,
+                              DailyRate = (decimal)vi.Vehicles.DailyRate,
+                              CompanyName = vi.Vehicles.Company.CompanyName,
+                              LicensePlate = vi.Vehicles.LicensePlate,
+                          }).ToList();
 
                 return View(vehicleDetails);
             }
         }
-        
+
         public ActionResult Rezervation(int Id)
         {
             int x = Convert.ToInt32(Session["UserId"]);
             int sId = Convert.ToInt32(Session["RoleID"]);
-                if (sId == 2)
-                {
+            if (sId == 2)
+            {
                 using (var context = new rentalEntities1())
                 {
                     var reservation = context.Vehicles
                         .Where(v => v.VehicleID == Id)
                         .Select(v => new ReservationModel
-                         {
+                        {
                             VehicleID = v.VehicleID,
                             UserID = sId,
                             Brand = v.Brand,
@@ -88,14 +88,32 @@ namespace CarRent.Controllers
                     ViewBag.Username = username;
                     return View(reservation);
                 }
-                }
+            }
 
-                else
-                {
-                    return RedirectToAction("Login", "Account");
-                }
-            
+            else
+            {
+                return RedirectToAction("Login", "Account");
+            }
+        }
 
+        public ActionResult VehicleFeatures(int Id)
+        {
+          using (var context = new rentalEntities1())
+          {
+                   List<VehicleDetail>vehicleDetails = (from vi in context.VehicleImages
+                              join v in context.VehicleFeaturesDetails on vi.VehicleID equals v.VehicleID
+                              where vi.VehicleID == Id
+                              select new VehicleDetail
+                              {
+                                  ImagePath = vi.ImagePath,
+                                  VehicleID = (int)vi.VehicleID,
+                                  Model = vi.Vehicles.Model,
+                                  Brand = vi.Vehicles.Brand,
+                                  detailDescription = v.detailDescription,
+                              }).ToList();
+
+                   return View(vehicleDetails);
+          }
         }
     }
 }
