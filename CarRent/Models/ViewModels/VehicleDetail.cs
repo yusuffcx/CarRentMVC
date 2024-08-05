@@ -27,6 +27,9 @@ namespace CarRent.Models.ViewModels
         public string LicensePlate { get; set; }
 
         public string detailDescription { get; set; }
+
+        public string FeatureName { get; set; }
+
     }
 }
 

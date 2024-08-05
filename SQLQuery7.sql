@@ -1,5 +1,5 @@
-﻿insert into VehicleFeaturesDetails(VehicleID,FeatureID,detailDescription) values (5,1,'CarPlay özelligi , cep telefonunuzdaki bazi özelliklerin
-araçta detayli bir sekilde kullanilmasini saglayan bir multimedya sistemidir.');
+﻿insert into VehicleFeaturesDetails(VehicleID,FeatureID,detailDescription) values (1,2,'Dijital klima sayesinde araç içi dereceye göre klimanin otomatik 
+ayarlanip konforlu bir yolculuk saglanir.');
 
 
 

@@ -102,6 +102,7 @@ namespace CarRent.Controllers
           {
                    List<VehicleDetail>vehicleDetails = (from vi in context.VehicleImages
                               join v in context.VehicleFeaturesDetails on vi.VehicleID equals v.VehicleID
+                              join vf in context.VehicleFeatures on v.FeatureID equals vf.FeatureID
                               where vi.VehicleID == Id
                               select new VehicleDetail
                               {
@@ -110,6 +111,8 @@ namespace CarRent.Controllers
                                   Model = vi.Vehicles.Model,
                                   Brand = vi.Vehicles.Brand,
                                   detailDescription = v.detailDescription,
+                                  FeatureName = vf.FeatureName,
+
                               }).ToList();
 
                    return View(vehicleDetails);
