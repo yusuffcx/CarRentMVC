@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\yusuf\\source\\repos\\CarRent\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\views\\vehicles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\vehicles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\views\\vehicles\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\vehicles\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\views\\account\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\account\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\views\\account\\isnotallow.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\account\\isnotallow.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|c:\\users\\yusuf\\source\\repos\\carrent\\carrent\\views\\car\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE01C590-1C16-4FF8-96AC-9401EE9DEBC8}|CarRent\\CarRent.csproj|solutionrelative:carrent\\views\\car\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +38,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Vehicles\\Create.cshtml",
-              "RelativeDocumentMoniker": "CarRent\\Views\\Vehicles\\Create.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Vehicles\\Create.cshtml",
-              "RelativeToolTip": "CarRent\\Views\\Vehicles\\Create.cshtml",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAAAH4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T12:21:02.528Z",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "CarRent\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "CarRent\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwEUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T06:50:22.421Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Vehicles\\Index.cshtml",
-              "RelativeDocumentMoniker": "CarRent\\Views\\Vehicles\\Index.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Vehicles\\Index.cshtml",
-              "RelativeToolTip": "CarRent\\Views\\Vehicles\\Index.cshtml",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAAGUAAAB+AAAA",
+              "DocumentIndex": 2,
+              "Title": "isNotAllow.cshtml",
+              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Account\\isNotAllow.cshtml",
+              "RelativeDocumentMoniker": "CarRent\\Views\\Account\\isNotAllow.cshtml",
+              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Account\\isNotAllow.cshtml",
+              "RelativeToolTip": "CarRent\\Views\\Account\\isNotAllow.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T11:12:15.914Z",
+              "WhenOpened": "2024-08-05T06:41:19.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Account\\Error.cshtml",
+              "RelativeDocumentMoniker": "CarRent\\Views\\Account\\Error.cshtml",
+              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Account\\Error.cshtml",
+              "RelativeToolTip": "CarRent\\Views\\Account\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T06:41:16.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Car\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarRent\\Views\\Car\\Index.cshtml",
+              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Car\\Index.cshtml",
+              "RelativeToolTip": "CarRent\\Views\\Car\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T06:40:27.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CarRent\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\yusuf\\source\\repos\\CarRent\\CarRent\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CarRent\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T06:40:02.968Z",
               "EditorCaption": ""
             }
           ]

@@ -57,7 +57,7 @@ namespace CarRent.Controllers
             else
             {
                 con.Close();
-                return View("Error");
+                return RedirectToAction("Login", "Account");
             }
         }
         public ActionResult isNotAllow()
