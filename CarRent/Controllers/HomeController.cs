@@ -13,13 +13,13 @@ namespace CarRent.Controllers
         public ActionResult Index()
         {
 
-            if (Session["RoleID"].ToString() == "2")
+            if (Session["RoleID"].ToString() == "1")
             {
-                return RedirectToAction("isNotAllow", "Account");
+                return RedirectToAction("Index", "Vehicles");
             }
             else
             {
-                return RedirectToAction("Index","Vehicles");
+                return RedirectToAction("isNotAllow", "Account");
             }
         }
 
