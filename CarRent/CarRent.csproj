@@ -319,6 +319,7 @@
     <Content Include="Views\Vehicles\Index.cshtml" />
     <Content Include="Views\Car\VehicleFeatures.cshtml" />
     <Content Include="Views\Seller\Index.cshtml" />
+    <Content Include="Views\Seller\notAllowed.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

@@ -56,14 +56,23 @@ namespace CarRent.Controllers
             }
             else if(x == 5)
             {
-                vehicles.Where(v => v.CompanyID == 2);
+                ;
+                return View(vehicles.Where(v => v.CompanyID == 2));
+            }
+
+            else if(sId == 1)
+            {
                 return View(vehicles.ToList());
             }
             else
             {
-                return HttpNotFound();
+                return RedirectToAction("notAllowed");
             }
+        }
 
+        public ActionResult notAllowed()
+        {
+            return View();
         }
 
         // GET: Vehicles/Details/5
