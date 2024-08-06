@@ -1,0 +1,112 @@
+﻿@model IEnumerable<CarRent.Models.Vehicles>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<p>
+    <a href="@Url.Action("Create", "Vehicles")" class="btn btn-primary">Yeni Araç</a>
+</p>
+<h1>Güncel Araç Listesi</h1>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">##</th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Brand)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Model)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Color)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.DailyRate)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.LicensePlate)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.AvailableFrom)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.AvailableTo)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.FuelType)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.TransmissionType)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.MileAge)
+            </th>
+            <th scope="col">Şirket Adı</th>
+            <th scope="col" colspan="2" class="text-center">###</th>
+        </tr>
+    </thead>
+
+    @{ int count = 1; }
+
+    @foreach (var item in Model)
+    {
+        <tbody>
+            <tr>
+                <th scope="row">@count</th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Brand)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Model)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Color)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Year)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DailyRate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LicensePlate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AvailableFrom)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AvailableTo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FuelType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TransmissionType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MileAge)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Company.CompanyName)
+                </td>
+                <td colspan="2">
+                    <div class="d-flex">
+                        <a href="@Url.Action("Edit", "Vehicles", new { Id = item.VehicleID})" class="btn btn-primary">Düzenle</a> |
+                        <a href="@Url.Action("Details", "Vehicles", new { Id = item.VehicleID})" class="btn btn-info">Detaylar</a> |
+                        <a href="@Url.Action("Delete", "Vehicles", new { Id = item.VehicleID})" class="btn btn-danger">Sil</a>
+                    </div>
+
+
+
+                </td>
+            </tr>
+        </tbody>
+        count++;
+    }
+</table>
