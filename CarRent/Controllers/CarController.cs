@@ -33,35 +33,47 @@ namespace CarRent.Controllers
                 return View(vehicleImagesWithDetails);
             }
         }
-
-        /*(from vi in context.VehicleImages
+        /*                   List<VehicleDetail>vehicleDetails = (from vi in context.VehicleImages
                               join v in context.VehicleFeaturesDetails on vi.VehicleID equals v.VehicleID
                               join vf in context.VehicleFeatures on v.FeatureID equals vf.FeatureID
                               where vi.VehicleID == Id
-                              select new VehicleDetail*/
+                              select new VehicleDetail
+                              {
+                                  ImagePath = vi.ImagePath,
+                                  VehicleID = (int)vi.VehicleID,
+                                  Model = vi.Vehicles.Model,
+                                  Brand = vi.Vehicles.Brand,
+                                  detailDescription = v.detailDescription,
+                                  FeatureName = vf.FeatureName,
+
+                              }).ToList();
+*/
+
 
         public ActionResult CarDetails(int Id)
         {
             using (var context = new rentalEntities1())
             {
 
-                IEnumerable<VehicleDetail> vehicleDetails = context.VehicleImages
-                          .Where(vi => vi.VehicleID == Id)
-                          .Select(vi => new VehicleDetail
-                          {
-                              ImagePath = vi.ImagePath,
-                              VehicleID = (int)vi.VehicleID,
-                              Model = vi.Vehicles.Model,
-                              Brand = vi.Vehicles.Brand,
-                              TransmissionType = vi.Vehicles.TransmissionType,
-                              FuelType = vi.Vehicles.FuelType,
-                              Year = (int)vi.Vehicles.Year,
-                              MileAge = (int)vi.Vehicles.MileAge,
-                              Color = vi.Vehicles.Color,
-                              DailyRate = (decimal)vi.Vehicles.DailyRate,
-                              CompanyName = vi.Vehicles.Company.CompanyName,
-                              LicensePlate = vi.Vehicles.LicensePlate,
-                          }).ToList();
+                IEnumerable<VehicleDetail> vehicleDetails = (from vi in context.VehicleImages 
+                     join vt in context.VehicleType on vi.VehicleID equals vt.VehicleID
+                     where vi.VehicleID == Id
+                    select new VehicleDetail
+                     {
+                        ImagePath = vi.ImagePath,
+                        VehicleID = (int)vi.VehicleID,
+                        Model = vi.Vehicles.Model,
+                        Brand = vi.Vehicles.Brand,
+                        TransmissionType = vi.Vehicles.TransmissionType,
+                        FuelType = vi.Vehicles.FuelType,
+                        Year = (int)vi.Vehicles.Year,
+                        MileAge = (int)vi.Vehicles.MileAge,
+                        Color = vi.Vehicles.Color,
+                        DailyRate = (decimal)vi.Vehicles.DailyRate,
+                        CompanyName = vi.Vehicles.Company.CompanyName,
+                        LicensePlate = vi.Vehicles.LicensePlate,
+                        TypeName = vt.TypeName,
+                    }).ToList();
 
                 return View(vehicleDetails);
             }
@@ -129,3 +141,31 @@ namespace CarRent.Controllers
 }
 
 
+/*
+         public ActionResult CarDetails(int Id)
+        {
+            using (var context = new rentalEntities1())
+            {
+
+                IEnumerable<VehicleDetail> vehicleDetails = context.VehicleImages
+                          .Where(vi => vi.VehicleID == Id)
+                          .Select(vi => new VehicleDetail
+                          {
+                              ImagePath = vi.ImagePath,
+                              VehicleID = (int)vi.VehicleID,
+                              Model = vi.Vehicles.Model,
+                              Brand = vi.Vehicles.Brand,
+                              TransmissionType = vi.Vehicles.TransmissionType,
+                              FuelType = vi.Vehicles.FuelType,
+                              Year = (int)vi.Vehicles.Year,
+                              MileAge = (int)vi.Vehicles.MileAge,
+                              Color = vi.Vehicles.Color,
+                              DailyRate = (decimal)vi.Vehicles.DailyRate,
+                              CompanyName = vi.Vehicles.Company.CompanyName,
+                              LicensePlate = vi.Vehicles.LicensePlate,
+                          }).ToList();
+
+                return View(vehicleDetails);
+            }
+        }
+*/
