@@ -15,17 +15,47 @@ namespace CarRent.Controllers
         {
             using (var context = new rentalEntities1())
             {
-                var vehicleReviews = context.VehicleReviews
-                .Select(r => new Review
-                {
-                    VehicleID = (int)r.VehicleID,
-                    UserID = (int)r.UserID,
-                    ReviewDate = (DateTime)r.ReviewDate,
-                    ReviewText = r.ReviewText,
-                }).ToList();
+                var vehicleReviews = (from review in context.VehicleReviews join user
+                                      in context.Users on review.UserID equals user.UserID
+                                      join vehicle in context.Vehicles on review.VehicleID equals 
+                                      vehicle.VehicleID
+                                      join company in context.Company on vehicle.CompanyID equals company.CompanyID
+                                      select new Review
+                                      {
+                                          VehicleID = (int)review.VehicleID,
+                                          UserID = (int)review.UserID,
+                                          ReviewDate = (DateTime)review.ReviewDate,
+                                          ReviewText = (string)review.ReviewText,
+                                          Username = user.Username,
+                                          Brand = vehicle.Brand,
+                                          Model = vehicle.Model,
+                                          CompanyName = company.CompanyName
+                                      }).ToList();
 
                 return View(vehicleReviews);
             }
         }
     }
 }
+
+
+//public ActionResult Index()
+//{
+//    using (var context = new rentalEntities1())
+//    {
+//        var vehicleReviews = context.VehicleReviews
+//            .Join(context.Users,
+//            review => review.UserID,
+//            user => user.UserID,
+//            (review, user) => new Review
+//            {
+//                VehicleID = (int)review.VehicleID,
+//                UserID = (int)review.UserID,
+//                ReviewDate = (DateTime)review.ReviewDate,
+//                ReviewText = review.ReviewText,
+//                Username = user.Username
+//            }).ToList();
+
+//        return View(vehicleReviews);
+//    }
+//}

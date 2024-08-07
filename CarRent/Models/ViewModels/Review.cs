@@ -16,6 +16,14 @@ namespace CarRent.Models.ViewModels
 
         public string ReviewText { get; set; }
 
+        public string Username { get; set; }
+
+        public string Brand { get; set; }
+
+        public string Model { get; set; }
+
+        public string CompanyName { get; set; }
+
 
 
 

@@ -1,33 +1,33 @@
-﻿
+﻿@model List<CarRent.Models.ViewModels.Review>
+
+
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
-<section class="p-4 p-md-5 text-center text-lg-start shadow-1-strong rounded" style="
-    background-image: url(https://mdbcdn.b-cdn.net/img/Photos/Others/background2.webp);
-  ">
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-10">
-            <div class="card">
-                <div class="card-body m-3">
-                    <div class="row">
-                        <div class="col-lg-4 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20%2810%29.webp"
-                                 class="rounded-circle img-fluid shadow-1" alt="woman avatar" width="200" height="200" />
-                        </div>
-                        <div class="col-lg-8">
-                            <p class="text-muted fw-light mb-4">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente
-                                molestiae numquam quas, voluptates omnis nulla ea odio quia similique
-                                corrupti magnam.
-                            </p>
-                            <p class="fw-bold lead mb-2"><strong>Anna Smith</strong></p>
-                            <p class="fw-bold text-muted mb-0">Product manager</p>
+@foreach (var item in Model)
+{
+    <section class="bg-light py-5 py-xl-8">
+        <div class="container overflow-hidden">
+            <div class="row gy-4 gy-md-0 gx-xxl-5">
+                <div class="col-12 col-md-4">
+                    <div class="card border-0 border-bottom border-primary shadow-sm">
+                        <div class="card-body p-4 p-xxl-5">
+                            <figure>
+                                <figcaption>
+                                    <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
+                                    <h4 class="mb-2 text-capitalize">@item.Username</h4>
+                                    <blockquote class="bsb-blockquote-icon mb-3">@item.ReviewText</blockquote>
+                                    <p>Kiraladığı Araç: <span class="fw-bolder"> @item.Brand @item.Model</span> </p>
+                                    <p>Firma: <span class="fw-bolder"> @item.CompanyName</span></p>
+                                    <p>Yorum Tarihi: <span class="fw-bolder"> @item.ReviewDate</span> </p>
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+}
+
