@@ -33,6 +33,13 @@ namespace CarRent.Controllers
                 return View(vehicleImagesWithDetails);
             }
         }
+
+        /*(from vi in context.VehicleImages
+                              join v in context.VehicleFeaturesDetails on vi.VehicleID equals v.VehicleID
+                              join vf in context.VehicleFeatures on v.FeatureID equals vf.FeatureID
+                              where vi.VehicleID == Id
+                              select new VehicleDetail*/
+
         public ActionResult CarDetails(int Id)
         {
             using (var context = new rentalEntities1())

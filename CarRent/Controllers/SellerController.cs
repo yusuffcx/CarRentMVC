@@ -13,35 +13,6 @@ namespace CarRent.Controllers
     public class SellerController : Controller
     {
 
-        //        int x = Convert.ToInt32(Session["UserId"]);
-        //int sId = Convert.ToInt32(Session["RoleID"]);
-        //if (sId == 2)
-        //{
-        //    using (var context = new rentalEntities1())
-        //    {
-        //        var reservation = context.Vehicles
-        //            .Where(v => v.VehicleID == Id)
-        //            .Select(v => new ReservationModel
-        //            {
-        //                VehicleID = v.VehicleID,
-        //                UserID = sId,
-        //                Brand = v.Brand,
-        //                Model = v.Model,
-        //                DailyRate = (int)v.DailyRate,
-        //                Year = (int)v.Year,
-        //                AvailableFrom = (DateTime)v.AvailableFrom,
-        //                AvailableTo = (DateTime)v.AvailableTo
-        //            }).ToList();
-
-        //        int userId = x;
-        //        string username = (string)Session["Username"];
-        //        ViewBag.UserID = userId;
-        //        ViewBag.Username = username;
-        //        return View(reservation);
-        //    }
-        //}
-
-
         private rentalEntities1 db = new rentalEntities1();
 
         // GET: Vehicles

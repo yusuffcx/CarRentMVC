@@ -133,6 +133,7 @@
     <Compile Include="Controllers\CarController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RentController.cs" />
+    <Compile Include="Controllers\ReviewController.cs" />
     <Compile Include="Controllers\SellerController.cs" />
     <Compile Include="Controllers\VehiclesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -199,6 +200,7 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ViewModels\Account.cs" />
+    <Compile Include="Models\ViewModels\Review.cs" />
     <Compile Include="Models\ViewModels\ReservationModel.cs" />
     <Compile Include="Models\ViewModels\VehicleDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -320,6 +322,7 @@
     <Content Include="Views\Car\VehicleFeatures.cshtml" />
     <Content Include="Views\Seller\Index.cshtml" />
     <Content Include="Views\Seller\notAllowed.cshtml" />
+    <Content Include="Views\Review\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
