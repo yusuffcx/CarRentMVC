@@ -4,22 +4,22 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="623c04abf4914abcbffd7197a83e36b6" Name="Diagram1">
-        <EntityTypeShape EntityType="rentalModel.Company" Width="1.5" PointX="0.875" PointY="11" IsExpanded="true" />
-        <EntityTypeShape EntityType="rentalModel.Customer" Width="1.5" PointX="7.625" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="rentalModel.Insurance" Width="1.5" PointX="2.625" PointY="14.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="rentalModel.Locations" Width="1.5" PointX="5.375" PointY="9.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="rentalModel.Payments" Width="1.5" PointX="10.5" PointY="13.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="rentalModel.Rentals" Width="1.5" PointX="5.5" PointY="13.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="rentalModel.Reservations" Width="1.5" PointX="8.25" PointY="10.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="rentalModel.Roles" Width="1.5" PointX="3.125" PointY="3.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="rentalModel.Users" Width="1.5" PointX="5.375" PointY="2.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="rentalModel.VehicleFeatures" Width="1.5" PointX="6" PointY="7.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="rentalModel.VehicleFeaturesDetails" Width="1.5" PointX="8.25" PointY="7.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="rentalModel.VehicleImages" Width="1.5" PointX="0.875" PointY="13.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="rentalModel.VehicleReviews" Width="1.5" PointX="8.25" PointY="15" IsExpanded="true" />
-        <EntityTypeShape EntityType="rentalModel.Vehicles" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="rentalModel.VehicleType" Width="1.5" PointX="2.625" PointY="6.25" IsExpanded="true" />
+      <Diagram DiagramId="623c04abf4914abcbffd7197a83e36b6" Name="Diagram1" ZoomLevel="67">
+        <EntityTypeShape EntityType="rentalModel.Company" Width="1.5" PointX="0.5" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Customer" Width="1.5" PointX="9.125" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Insurance" Width="1.5" PointX="8.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Locations" Width="1.5" PointX="2.875" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Payments" Width="1.5" PointX="11.375" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Rentals" Width="1.5" PointX="11.375" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Reservations" Width="1.5" PointX="8.875" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Roles" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Users" Width="1.5" PointX="7.125" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.VehicleFeatures" Width="1.5" PointX="2.875" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.VehicleFeaturesDetails" Width="1.5" PointX="1.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.VehicleImages" Width="1.5" PointX="0.625" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.VehicleReviews" Width="1.5" PointX="7" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.Vehicles" Width="1.5" PointX="5" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="rentalModel.VehicleType" Width="1.5" PointX="3.125" PointY="2.375" IsExpanded="true" />
         <AssociationConnector Association="rentalModel.FK__Vehicles__Compan__4222D4EF" ManuallyRouted="false" />
         <AssociationConnector Association="rentalModel.FK__Customer__UserID__3B75D760" ManuallyRouted="false" />
         <AssociationConnector Association="rentalModel.FK__Insurance__Renta__5BE2A6F2" ManuallyRouted="false" />

@@ -54,7 +54,6 @@ namespace CarRent.Controllers
         {
             using (var context = new rentalEntities1())
             {
-
                 IEnumerable<VehicleDetail> vehicleDetails = (from vi in context.VehicleImages 
                      join vt in context.VehicleType on vi.VehicleID equals vt.VehicleID
                      where vi.VehicleID == Id
@@ -74,7 +73,6 @@ namespace CarRent.Controllers
                         LicensePlate = vi.Vehicles.LicensePlate,
                         TypeName = vt.TypeName,
                     }).ToList();
-
                 return View(vehicleDetails);
             }
         }

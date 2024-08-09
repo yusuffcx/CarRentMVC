@@ -24,8 +24,5 @@ namespace CarRent.Models.ViewModels
 
         public string CompanyName { get; set; }
 
-
-
-
     }
 }

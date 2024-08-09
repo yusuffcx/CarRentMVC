@@ -17,7 +17,7 @@
         Start: <input type="text" id="my_date_picker1">
         End Date: <input type="text" id="my_date_picker2">
         <a class="btn btn-info kirala gap-4" href="#">Aracı Kirala</a>
-       @* <script src="~/Scripts/jquery-3.7.0.min.js"></script>*@
+        @* <script src="~/Scripts/jquery-3.7.0.min.js"></script>*@
         <script>
         $(document).ready(function () {
             var enErken = $.datepicker.parseDate('dd.mm.yy', '@item.AvailableFrom');
@@ -53,17 +53,17 @@
                 var vehicleID = @item.VehicleID;
                 alert(userID);
                 alert(vehicleID);
-
+                var url = "/Rent/AddRent";
 
 
                 $.ajax({
                     type: "POST",
-                    url: "/Rent/AddRent/"+2,
+                    url: "@Url.Action("AddRent","Rent")",
                     data: {
                         userID: userID,
                         startDate: startDate,
                         endDate: endDate,
-                        vehicleID: vehicleID
+                        vehicleID: vehicleID,
                     },
                     success: function () {
                         alert("Arac Kiralama bilgisi ekleniyor!");
@@ -81,12 +81,13 @@
 
 
 
+
 @*@item.VehicleID*@
 @*@ViewBag.UserID
     @ViewBag.Username*@
 
 
-                @*///* var start = $.datepicker.parseDate('dd.mm.yy', 'startDate');
-                //var end = $.datepicker.parseDate('dd.mm.yy', 'endDate');*/
-                //alert(start);
-                //alert(end);*@
+@*///* var start = $.datepicker.parseDate('dd.mm.yy', 'startDate');
+    //var end = $.datepicker.parseDate('dd.mm.yy', 'endDate');*/
+    //alert(start);
+    //alert(end);*@
